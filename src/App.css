@@ -9,8 +9,17 @@ body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
+
 header {
     font-size: 2rem;
+}
+@media (max-width: 600px){
+    header{
+        font-size: 1rem;
+    }
+    .filter-todo{
+        width: 8rem;
+    }
 }
 
 header,
@@ -19,6 +28,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 form input,
 form button {
@@ -27,6 +37,10 @@ form button {
     border: none;
     background: white;
 }
+form input{
+    width: 30%;
+}
+
 form button {
     color: #00C9FF;
     background: #f7fffe;
@@ -47,6 +61,17 @@ form button:hover {
     min-width: 30%;
     list-style: none;
 }
+@media (max-width: 1200px) {
+    .todo-list{
+        min-width: 50%;
+    }
+}
+@media (max-width: 500px){
+    .todo-list{
+        min-width: 20rem;
+    }
+}
+
 
 .todo {
     margin: 0.5rem;

@@ -22,7 +22,7 @@ const Form = ({setInputText,todos,setTodos,inputText,setStatus}) => {
     }
 
     return (
-        <div>
+        <div className="form-div">
             <form>
                 <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input"/>
                 <button onClick={inputText === "" ? emptySubmitHandler : submitTodoHandler} className="todo-button" type="submit">
