@@ -32,13 +32,13 @@ form {
 }
 form input,
 form button {
-    padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: white;
 }
 form input{
     width: 30%;
+    min-height: 40px;
 }
 
 form button {
@@ -54,13 +54,17 @@ form button:hover {
 .todo-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .todo-list {
     min-width: 30%;
     list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+
+
 }
+
 @media (max-width: 1200px) {
     .todo-list{
         min-width: 50%;
@@ -83,11 +87,24 @@ form button:hover {
     align-items: center;
     transition: all 1s ease;
 }
+.color{
+    background: white;
+    display: flex;
+    align-items: stretch;
+    min-width: 150px;
+}
+.color input {
+    min-width: 150px;
+    min-height: 150px;
+}
+
 .filter-todo {
     padding: 1rem;
 }
 .todo li {
     flex: 1;
+    min-width: 300px;
+    min-height: 200px;
 }
 
 .trash-btn,

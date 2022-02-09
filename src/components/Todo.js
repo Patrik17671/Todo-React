@@ -17,8 +17,8 @@ const Todo = ({text, todo, todos, setTodos}) => {
     };
 
     return (
-        <div className="todo">
-            <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}</li>
+        <div  style={{backgroundColor: text}} className="todo">
+            <li className={`todo-item ${todo.completed ? "completed" : ""}`} />
             <button onClick={completeHandler} className="complete-btn">
                 <i className="fas fa-check"/>
             </button>

@@ -48,7 +48,7 @@ function App() {
   return (
       <div className="App">
           <header>
-              <h1>Zoznam úloh</h1>
+              <h1>Provnávač 2000</h1>
           </header>
           <Form inputText={inputText}
                 todos={todos}
@@ -61,6 +61,7 @@ function App() {
               todos={todos}
               filteredTodos={filteredTodos}
           />
+
       </div>
   );
 }

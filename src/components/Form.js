@@ -24,7 +24,7 @@ const Form = ({setInputText,todos,setTodos,inputText,setStatus}) => {
     return (
         <div className="form-div">
             <form>
-                <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input"/>
+                <input value={inputText} onChange={inputTextHandler} type="color" className="todo-input"/>
                 <button onClick={inputText === "" ? emptySubmitHandler : submitTodoHandler} className="todo-button" type="submit">
                     <i className="fas fa-plus-square" />
                 </button>
